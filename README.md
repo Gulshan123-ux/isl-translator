@@ -54,15 +54,3 @@ Analytics & remote config: on-device latency counters, anonymous usage stats, re
 Accessibility: high-contrast mode, screen-reader announcements, Hindi localization, overlay mode for video calls.
 See pages/system_vision.py for the interactive checklist you can demo today.
 
-Troubleshooting
-Issue	Fix
-numpy._core.multiarray failed to import	Ensure you installed demo-app/requirements.txt so TensorFlow, MediaPipe, and numpy stay compatible.
-gTTS playback blocked	Some browsers require a user gesture before auto-play works. Use the sidebar replay button the first time.
-Camera feed blank	Confirm permissions, close other apps that use the webcam, or change the camera index in the page code.
-Google Translate errors	The googletrans package occasionally throttles requests; wait a few seconds and retry.
-Contributing
-Create a virtual environment and install dependencies.
-Keep model files out of version control if they exceed size limits.
-Run streamlit run Home.py locally when editing UI pages.
-Use the system_vision page to document any new compliance or UX requirements so stakeholders can preview them even before implementation.
-About
